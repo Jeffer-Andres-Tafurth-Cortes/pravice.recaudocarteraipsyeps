@@ -94,6 +94,32 @@
 }
 
 /* ===============================
+   CTA BUTTON
+================================ */
+
+.ctaWrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #004a80; /* Azul institucional */
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 74, 128, 0.2);
+}
+
+.ctaButton:hover {
+  background: #f7c600; /* Dorado estratégico */
+  color: #004a80;
+  transform: translateY(-4px);
+}
+
+/* ===============================
    RESPONSIVE
 ================================ */
 

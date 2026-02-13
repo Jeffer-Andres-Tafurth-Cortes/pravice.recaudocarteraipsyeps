@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import styles from "../styles/AppSection.module.css";
 
 export default function AppSection() {
@@ -93,6 +94,23 @@ export default function AppSection() {
               <p>{item.text}</p>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* 🔥 BOTÓN NUEVO (único agregado) */}
+        <motion.div
+          className={styles.ctaWrapper}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        >
+          <Link
+            href="https://legalapp.pravice.co/login.php"
+            className={styles.ctaButton}
+            target="_blank"
+          >
+            Ingresar a la App Legal PRAVICE
+          </Link>
         </motion.div>
       </motion.div>
     </section>

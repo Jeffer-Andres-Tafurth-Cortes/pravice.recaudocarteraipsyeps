@@ -47,12 +47,12 @@
 }
 
 .sideCard {
-  background: rgba(0, 74, 128, 0.05); /* Azul institucional muy sutil */
+  background: rgba(0, 74, 128, 0.05);
   padding: 24px;
   border-radius: 8px;
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center; /* 🔥 CAMBIO CLAVE */
   border: 1px solid rgba(0, 74, 128, 0.08);
   transition: 0.3s ease;
 }
@@ -65,22 +65,23 @@
 .icon {
   width: 42px;
   height: 42px;
-  background-color: #004a80;
+  min-width: 42px; /* 🔥 evita deformación */
   border-radius: 50%;
+  background-color: #004a80;
   position: relative;
+  flex-shrink: 0; /* 🔥 evita que se vuelva óvalo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Opcional: acento dorado interior */
 .icon::after {
   content: "";
-  position: absolute;
   width: 14px;
   height: 14px;
   background: #f7c600;
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* ===============================
