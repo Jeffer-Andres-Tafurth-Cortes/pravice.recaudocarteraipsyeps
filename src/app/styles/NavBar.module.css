@@ -1,3 +1,7 @@
+/* ========================================
+   NAVBAR BASE
+======================================== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -11,23 +15,28 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 18px 6%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* LOGO */
+/* ========================================
+   LOGO
+======================================== */
+
 .logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: #004a80;
+  display: flex;
+  align-items: center;
 }
 
-/* MENU */
+/* ========================================
+   MENU DESKTOP
+======================================== */
+
 .menu {
   display: flex;
   gap: 28px;
+  align-items: center;
 }
 
 .menu a {
@@ -36,13 +45,37 @@
   color: #333;
   font-weight: 500;
   transition: 0.3s ease;
+  position: relative;
+}
+
+/* Línea inferior elegante */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #004a80;
+  transition: 0.3s ease;
 }
 
 .menu a:hover {
   color: #004a80;
 }
 
-/* BOTÓN APP */
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   BOTÓN APP DESKTOP
+======================================== */
+
+.cta {
+  display: block;
+}
+
 .appButton {
   background: #004a80;
   color: #ffffff;
@@ -56,4 +89,81 @@
 
 .appButton:hover {
   background: #00365c;
+}
+
+/* ========================================
+   HAMBURGER (OCULTO EN DESKTOP)
+======================================== */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar,
+.barActive {
+  width: 26px;
+  height: 3px;
+  background: #004a80;
+  transition: 0.3s ease;
+}
+
+/* ========================================
+   MOBILE / TABLET
+======================================== */
+
+@media (max-width: 992px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .cta {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 6%;
+    gap: 20px;
+
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .menuOpen {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  /* Botón dentro del menú */
+  .appButtonMobile {
+    margin-top: 10px;
+    background: #004a80;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .appButtonMobile:hover {
+    background: #00365c;
+  }
 }

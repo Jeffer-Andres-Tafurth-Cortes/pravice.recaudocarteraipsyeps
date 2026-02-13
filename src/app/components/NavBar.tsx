@@ -1,10 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import styles from "../styles/NavBar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className={styles.navbar}>
       <div className={styles.container}>
@@ -19,17 +22,49 @@ export default function NavBar() {
           />
         </Link>
 
+        {/* HAMBURGER */}
+        <button
+          className={styles.hamburger}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className={menuOpen ? styles.barActive : styles.bar}></span>
+          <span className={menuOpen ? styles.barActive : styles.bar}></span>
+          <span className={menuOpen ? styles.barActive : styles.bar}></span>
+        </button>
+
         {/* MENU */}
-        <nav className={styles.menu}>
-          <a href="#inicio">Inicio</a>
-          <a href="#problema">Problema</a>
-          <a href="#solucion">Solución</a>
-          <a href="#metodologia">Metodología</a>
-          <a href="#clientes">Clientes</a>
-          <a href="#contacto">Contacto</a>
+        <nav className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}>
+          <a href="#inicio" onClick={() => setMenuOpen(false)}>
+            Inicio
+          </a>
+          <a href="#problema" onClick={() => setMenuOpen(false)}>
+            Problema
+          </a>
+          <a href="#solucion" onClick={() => setMenuOpen(false)}>
+            Solución
+          </a>
+          <a href="#metodologia" onClick={() => setMenuOpen(false)}>
+            Metodología
+          </a>
+          <a href="#clientes" onClick={() => setMenuOpen(false)}>
+            Clientes
+          </a>
+          <a href="#contacto" onClick={() => setMenuOpen(false)}>
+            Contacto
+          </a>
+
+          {/* Botón también visible en móvil */}
+          <Link
+            href="https://legalapp.pravice.co/login.php"
+            target="_blank"
+            className={styles.appButtonMobile}
+            onClick={() => setMenuOpen(false)}
+          >
+            Consultar mi caso
+          </Link>
         </nav>
 
-        {/* BOTÓN APP */}
+        {/* BOTÓN DESKTOP */}
         <div className={styles.cta}>
           <Link
             href="https://legalapp.pravice.co/login.php"
