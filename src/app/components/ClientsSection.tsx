@@ -48,25 +48,25 @@ export default function ClientsSection() {
         <motion.div className={styles.grid}>
           {[
             {
-              img: "/ips.jpg",
+              img: "/IpsClinicas.jpg",
               alt: "IPS y Clínicas en Colombia",
               title: "IPS y Clínicas",
               text: "Instituciones prestadoras de servicios de salud con cartera en EPS, ADRES y aseguradoras...",
             },
             {
-              img: "/hospital.jpg",
+              img: "/Hospitales.jpg",
               alt: "Hospitales públicos y privados",
               title: "Hospitales Públicos y Privados",
               text: "Centros hospitalarios de mediana y alta complejidad con cartera acumulada...",
             },
             {
-              img: "/tecnologia-medica.jpg",
+              img: "/Tecnologia.jpg",
               alt: "Proveedores de tecnología en salud",
               title: "Proveedores de Tecnologías en Salud",
               text: "Empresas que suministran dispositivos médicos, equipos diagnósticos...",
             },
             {
-              img: "/laboratorio.jpg",
+              img: "/Laboratorio.jpg",
               alt: "Prestadores de servicios especializados",
               title: "Prestadores de Servicios Especializados",
               text: "Laboratorios clínicos, centros de diagnóstico y otros actores...",
