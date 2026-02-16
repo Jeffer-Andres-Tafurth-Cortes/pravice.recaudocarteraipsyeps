@@ -1,53 +1,48 @@
 .section {
-  padding: 90px 20px;
-  background: #faf9f7; /* Fondo institucional limpio */
+  padding: 110px 20px;
+  background: linear-gradient(180deg, #faf9f7 0%, #ffffff 100%);
   text-align: center;
+  position: relative;
+  overflow: visible; /* 👈 importante */
 }
+
+/* =========================
+   TITULOS
+========================= */
 
 .title {
   font-size: 40px;
-  color: #004a80; /* Azul institucional */
+  color: #004a80;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .subtitle {
   max-width: 900px;
-  margin: auto;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 60px;
+  margin: 0 auto 70px auto;
+  color: #5f6368;
+  line-height: 1.75;
+  font-size: 16px;
 }
 
 /* =========================
-   CONTENEDOR DEL TIMELINE
+   CONTENEDOR PRINCIPAL
 ========================= */
 
 .timeline {
-  position: relative;
-  margin-bottom: 60px;
-}
-
-/* LINEA SUPERIOR */
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  left: 5%;
-  right: 5%;
-  height: 4px;
-  background: #004a80; /* Línea institucional */
+  width: 100%;
+  max-width: 1200px; /* 👈 límite real */
+  margin: 0 auto 80px auto;
 }
 
 /* =========================
-   GRID
+   GRID REAL Y ESTABLE
 ========================= */
 
 .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
-  position: relative;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 columnas fijas */
+  gap: 40px;
 }
 
 /* =========================
@@ -55,19 +50,17 @@
 ========================= */
 
 .step {
-  position: relative;
-  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* CIRCULO NUMERADO */
+/* CÍRCULO */
 
 .circle {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
   background: #004a80;
   color: #ffffff;
   border-radius: 50%;
@@ -75,15 +68,15 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  z-index: 2;
-  box-shadow: 0 6px 15px rgba(0, 74, 128, 0.25);
-  transition: 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 8px 18px rgba(0, 74, 128, 0.25);
+  transition: all 0.3s ease;
 }
 
-/* Hover profesional */
 .step:hover .circle {
-  background: #f7c600; /* Dorado acento */
+  background: #f7c600;
   color: #000;
+  transform: scale(1.08);
 }
 
 /* =========================
@@ -91,86 +84,78 @@
 ========================= */
 
 .card {
+  width: 100%;
   background: #ffffff;
-  padding: 25px 22px;
-  border-radius: 8px;
+  padding: 28px 24px;
+  border-radius: 12px;
   border: 1px solid rgba(0, 74, 128, 0.08);
   text-align: left;
-  min-height: 150px;
-  transition: 0.3s ease;
-  position: relative;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background: #004a80;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  transition: 0.3s ease;
+  min-height: 190px;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 74, 128, 0.12);
-}
-
-.card:hover::before {
-  background: #f7c600;
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 74, 128, 0.12);
 }
 
 .card h3 {
   color: #004a80;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 12px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .card p {
-  color: #555;
+  color: #5f6368;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* =========================
-   TEXTO FINAL
+   FOOTER
 ========================= */
 
 .footer {
-  max-width: 900px;
-  margin: 30px auto 0;
-  color: #555;
+  max-width: 850px;
+  margin: 60px auto 0;
+  color: #5f6368;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* =========================
-   RESPONSIVE
+   SEO OCULTO (AHORA SÍ BIEN HECHO)
 ========================= */
 
-@media (max-width: 768px) {
-  .timeline::before {
-    display: none;
-  }
+.seoText {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
-  .circle {
-    left: 20px;
-    transform: none;
-  }
+/* =========================
+   RESPONSIVE REAL
+========================= */
 
-  .card {
-    margin-left: 45px;
+@media (max-width: 992px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .step {
-    padding-top: 10px;
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
   }
 
   .title {
-    font-size: 30px;
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 15px;
   }
 }
