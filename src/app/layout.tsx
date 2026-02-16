@@ -17,16 +17,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Recuperación de Cartera en Salud | PRAVICE Abogados",
+  title: {
+    default: "Recuperación de Cartera en Salud | PRAVICE Abogados",
+    template: "%s | PRAVICE Abogados",
+  },
   description:
-    "Recuperación estratégica de cartera para IPS, clínicas y hospitales en Colombia. Modelo 10% sobre recaudo efectivo. Diagnóstico gratuito.",
+    "Firma especializada en recuperación de cartera en salud en Colombia. Cobro jurídico a EPS, procesos ejecutivos y declarativos para IPS, clínicas y hospitales.",
   keywords: [
-    "recuperación de cartera en salud",
-    "cobro jurídico EPS",
-    "cartera ADRES",
+    "recuperación de cartera en salud Colombia",
+    "cobro jurídico a EPS",
     "demanda contra EPS",
-    "recuperación cartera IPS Colombia",
+    "reclamaciones ADRES",
+    "abogados sector salud Colombia",
+    "recuperación cartera IPS",
   ],
+  openGraph: {
+    title: "Recuperación de Cartera en Salud | PRAVICE Abogados",
+    description:
+      "Recuperación estratégica de cartera hospitalaria. Demandas contra EPS y procesos ejecutivos en Colombia.",
+    url: "https://pravice-recaudocarteraipsyeps.com",
+    siteName: "PRAVICE Abogados",
+    locale: "es_CO",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -35,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es-CO">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
