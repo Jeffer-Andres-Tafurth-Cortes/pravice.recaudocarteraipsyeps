@@ -13,7 +13,7 @@ export default function SolutionSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TITULO */}
+        {/* TITULO OPTIMIZADO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -21,10 +21,11 @@ export default function SolutionSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Nuestra Solución: Estrategia Doble Carril
+          Estrategia Jurídica de Recuperación de Cartera para IPS y EPS en
+          Colombia
         </motion.h2>
 
-        {/* INTRO */}
+        {/* INTRO SEO */}
         <motion.p
           className={styles.intro}
           initial={{ opacity: 0 }}
@@ -32,10 +33,12 @@ export default function SolutionSection() {
           transition={{ delay: 0.2, duration: 0.8 }}
           viewport={{ once: true }}
         >
-          En PRAVICE ABOGADOS entendemos que no toda la cartera es igual.
-          Mezclar rutas procesales es el error más común y costoso en
-          recuperación de cartera en salud. Nuestra metodología separa
-          estratégicamente cada tipo de obligación para maximizar el recaudo.
+          En PRAVICE ABOGADOS aplicamos un modelo especializado de cobro
+          jurídico de cartera en el sector salud. No toda la cartera
+          hospitalaria requiere el mismo tratamiento procesal. Separar
+          estratégicamente cada obligación permite maximizar el recaudo, reducir
+          tiempos y proteger el derecho de cobro frente a EPS, ADRES y entidades
+          públicas.
         </motion.p>
 
         {/* CARRILES VISUALES */}
@@ -61,7 +64,7 @@ export default function SolutionSection() {
             }}
             transition={{ duration: 0.6 }}
           >
-            Carril 1 - Ejecutivo
+            Proceso Ejecutivo – Cobro Rápido con Título Ejecutivo
           </motion.div>
 
           <motion.div
@@ -72,7 +75,7 @@ export default function SolutionSection() {
             }}
             transition={{ duration: 0.6 }}
           >
-            Carril 2 - Declarativo
+            Proceso Declarativo – Reconstrucción Probatoria de Cartera Glosada
           </motion.div>
         </motion.div>
 
@@ -84,12 +87,12 @@ export default function SolutionSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3>Carril 1 - Ejecutivo</h3>
+            <h3>Proceso Ejecutivo contra EPS</h3>
             <p>
-              Para facturas exigibles con título ejecutivo claro. Sin glosa
-              efectiva o con glosa rechazada. Proceso rápido con medidas
-              cautelares inmediatas para asegurar el patrimonio del deudor y
-              acelerar el pago.
+              Aplicable a facturas exigibles con título ejecutivo claro y
+              ausencia de glosa válida. Permite iniciar demanda ejecutiva con
+              solicitud de medidas cautelares inmediatas, embargo de cuentas y
+              aseguramiento patrimonial para acelerar el pago de la cartera.
             </p>
           </motion.div>
 
@@ -99,17 +102,17 @@ export default function SolutionSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3>Carril 2 - Declarativo</h3>
+            <h3>Proceso Declarativo para Cartera Glosada</h3>
             <p>
-              Para cartera glosada, repetitiva o improcedente según el deudor.
-              Construcción probatoria detallada por cada factura. Reconstrucción
-              técnica de la prestación del servicio con soporte médico y
-              administrativo robusto.
+              Diseñado para facturas objetadas o con glosas técnicas. Implica
+              construcción probatoria individual por factura, reconstrucción del
+              soporte médico y defensa jurídica integral para obtener sentencia
+              que reconozca el derecho de pago.
             </p>
           </motion.div>
         </div>
 
-        {/* TARJETAS */}
+        {/* TARJETAS OPTIMIZADAS */}
         <motion.div
           className={styles.cards}
           initial="hidden"
@@ -126,20 +129,20 @@ export default function SolutionSection() {
         >
           {[
             {
-              title: "Medidas cautelares preventivas",
-              text: "Aseguramiento patrimonial antes de sentencia",
+              title: "Medidas cautelares contra EPS",
+              text: "Embargo y aseguramiento patrimonial antes de sentencia.",
             },
             {
-              title: "Construcción probatoria por factura",
-              text: "Cada obligación con su expediente completo",
+              title: "Gestión técnica de glosas médicas",
+              text: "Revisión jurídica y médica para desvirtuar objeciones improcedentes.",
             },
             {
-              title: "Control contable permanente",
-              text: "Trazabilidad financiera en tiempo real",
+              title: "Prevención de prescripción de cartera",
+              text: "Interrupción oportuna de términos legales para proteger el derecho de cobro.",
             },
             {
               title: "Investigación patrimonial del deudor",
-              text: "Identificación de activos ejecutables",
+              text: "Identificación de activos y fuentes de recaudo ejecutables.",
             },
           ].map((card, index) => (
             <motion.div
@@ -157,6 +160,13 @@ export default function SolutionSection() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* TEXTO SEO OCULTO */}
+        <p className={styles.seoText}>
+          Servicio especializado en cobro jurídico a EPS, procesos ejecutivos
+          por facturas hospitalarias, demandas declarativas por glosas médicas y
+          recuperación de cartera vencida en IPS en Colombia.
+        </p>
       </motion.div>
     </section>
   );
