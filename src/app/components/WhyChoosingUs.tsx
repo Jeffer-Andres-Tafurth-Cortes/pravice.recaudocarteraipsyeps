@@ -14,28 +14,28 @@ export default function WhyChoosingUs() {
   const items = [
     {
       icon: faUserGroup,
-      title: "Equipo Jurídico Especializado en Salud",
-      text: "Nuestros abogados conocen profundamente la normativa sectorial, los procesos administrativos de EPS, ADRES y entidades territoriales. No somos cobradores tradicionales, somos estrategas jurídicos del sector salud.",
+      title: "Abogados Especializados en Derecho del Sector Salud",
+      text: "Nuestro equipo jurídico cuenta con experiencia en recuperación de cartera hospitalaria, cobro jurídico a EPS y gestión ante ADRES. Conocemos la normativa sectorial y los procesos administrativos propios del sistema de salud colombiano.",
     },
     {
       icon: faShieldHalved,
-      title: "Certificación Superintendencia Nacional de Salud",
-      text: "Cumplimos todos los requisitos técnicos, éticos y operativos exigidos por el ente regulador. Esta certificación garantiza que nuestros procesos cumplen los más altos estándares del sector.",
+      title: "Cumplimiento Normativo ante Superintendencia Nacional de Salud",
+      text: "Operamos bajo los estándares regulatorios exigidos por la Superintendencia Nacional de Salud, garantizando procesos jurídicos transparentes, técnicamente estructurados y alineados con la regulación vigente en Colombia.",
     },
     {
       icon: faScaleBalanced,
-      title: "Solidez en Presentación de Demandas",
-      text: "Cada demanda es construida con rigor técnico y probatorio. Nuestros escritos judiciales están diseñados para resistir excepciones y acelerar los procesos hacia sentencia favorable.",
+      title: "Solidez en Demandas Ejecutivas y Declarativas contra EPS",
+      text: "Estructuramos procesos ejecutivos por facturas hospitalarias y demandas declarativas por cartera glosada con construcción probatoria robusta, reduciendo riesgo procesal y aumentando la probabilidad de sentencia favorable.",
     },
     {
       icon: faChartLine,
-      title: "Recuperación Eficiente y Personalizada",
-      text: "Entendemos que cada institución tiene necesidades diferentes. Diseñamos estrategias adaptadas a su realidad operativa, prioridades financieras y capacidad de gestión documental.",
+      title: "Modelo de Recuperación de Cartera por Resultados",
+      text: "Nuestro esquema de comisión por éxito alinea intereses con la institución de salud. Diseñamos estrategias personalizadas para IPS, clínicas y hospitales, enfocadas en flujo de caja real y recuperación efectiva.",
     },
   ];
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="por-que-elegirnos">
       <motion.div
         className={styles.container}
         initial={{ opacity: 0, y: 40 }}
@@ -43,7 +43,7 @@ export default function WhyChoosingUs() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TÍTULO */}
+        {/* TITULO SEO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -51,7 +51,8 @@ export default function WhyChoosingUs() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          ¿Por Qué Elegir PRAVICE ABOGADOS?
+          ¿Por Qué Elegir una Firma Especializada en Recuperación de Cartera en
+          Salud?
         </motion.h2>
 
         {/* GRID */}
@@ -94,7 +95,7 @@ export default function WhyChoosingUs() {
           ))}
         </motion.div>
 
-        {/* HIGHLIGHT */}
+        {/* HIGHLIGHT ESTRATÉGICO */}
         <motion.div
           className={styles.highlight}
           initial={{ opacity: 0, y: 40 }}
@@ -109,13 +110,21 @@ export default function WhyChoosingUs() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           />
+
           <p>
-            <strong>Menos demandas, más resultados.</strong> Nuestra filosofía
-            es judicializar solo cuando es estratégicamente necesario,
-            priorizando siempre el recaudo efectivo sobre la actividad procesal
-            sin propósito.
+            <strong>Menos litigio innecesario, más recaudo efectivo.</strong>{" "}
+            Nuestra filosofía prioriza estrategias de recuperación de cartera
+            que generen flujo de caja real para IPS y hospitales, utilizando el
+            proceso judicial únicamente cuando es jurídicamente estratégico.
           </p>
         </motion.div>
+
+        {/* TEXTO SEO OCULTO */}
+        <p className={styles.seoText}>
+          Firma de abogados especializada en cobro jurídico a EPS, recuperación
+          de cartera hospitalaria, demandas ejecutivas por facturas médicas y
+          gestión legal ante la Superintendencia Nacional de Salud en Colombia.
+        </p>
       </motion.div>
     </section>
   );
