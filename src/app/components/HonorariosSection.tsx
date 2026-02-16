@@ -5,7 +5,7 @@ import styles from "../styles/HonorariosSection.module.css";
 
 export default function HonorariosSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="honorarios">
       <motion.div
         className={styles.container}
         initial={{ opacity: 0, y: 40 }}
@@ -13,7 +13,7 @@ export default function HonorariosSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
       >
-        {/* TÍTULO */}
+        {/* TÍTULO SEO */}
         <motion.h2
           className={styles.title}
           initial={{ opacity: 0, y: 30 }}
@@ -21,7 +21,8 @@ export default function HonorariosSection() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Modelo de Honorarios: Alineación Total con sus Resultados
+          Honorarios en Recuperación de Cartera para IPS: Comisión por
+          Resultados
         </motion.h2>
 
         <div className={styles.content}>
@@ -52,9 +53,13 @@ export default function HonorariosSection() {
               </motion.div>
             </div>
 
-            <p className={styles.comision}>Comisión sobre recaudo efectivo</p>
+            <p className={styles.comision}>
+              Comisión sobre recaudo efectivo de cartera hospitalaria
+            </p>
 
-            <p className={styles.bold}>PRAVICE gana cuando usted cobra.</p>
+            <p className={styles.bold}>
+              PRAVICE ABOGADOS solo gana cuando su IPS recupera el dinero.
+            </p>
           </motion.div>
 
           {/* RIGHT SIDE */}
@@ -79,7 +84,7 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Transparencia y Alineación de Intereses
+              Modelo de Comisión por Éxito en Cobro Jurídico a EPS
             </motion.h3>
 
             <motion.p
@@ -89,23 +94,25 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Nuestro modelo de honorarios elimina cualquier conflicto de
-              interés...
+              Nuestro esquema de honorarios elimina anticipos, cuotas fijas o
+              costos ocultos. La institución de salud solo paga un porcentaje
+              sobre el dinero efectivamente recuperado en procesos ejecutivos o
+              declarativos contra EPS y entidades públicas.
             </motion.p>
 
             <div className={styles.cards}>
               {[
                 {
-                  title: "Sin costos ocultos",
-                  text: "No hay pagos iniciales ni cuotas mensuales",
+                  title: "Sin anticipo ni cuotas mensuales",
+                  text: "No requiere inversión inicial para iniciar la recuperación de cartera.",
                 },
                 {
-                  title: "Sin riesgo financiero",
-                  text: "Solo paga cuando recuperamos su cartera",
+                  title: "Sin riesgo financiero para la IPS",
+                  text: "Solo se generan honorarios cuando existe recaudo efectivo.",
                 },
                 {
-                  title: "Incentivo al recaudo rápido",
-                  text: "Nuestro modelo nos impulsa a conseguir resultados ágiles",
+                  title: "Incentivo directo al recaudo rápido",
+                  text: "Nuestro modelo nos obliga a maximizar resultados en el menor tiempo posible.",
                 },
               ].map((card, index) => (
                 <motion.div
@@ -132,8 +139,11 @@ export default function HonorariosSection() {
               }}
               whileHover={{ scale: 1.02 }}
             >
-              <h4>Reportes de comisión claros</h4>
-              <p>Cada pago con su detalle y cálculo transparente</p>
+              <h4>Reportes claros y trazabilidad financiera</h4>
+              <p>
+                Cada pago recuperado incluye detalle por factura, cálculo de
+                comisión y soporte documental verificable.
+              </p>
             </motion.div>
 
             <motion.p
@@ -143,10 +153,19 @@ export default function HonorariosSection() {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Este esquema ha demostrado ser el más efectivo...
+              Este modelo de honorarios por resultados ha demostrado ser el más
+              eficiente para IPS, clínicas y hospitales que buscan recuperación
+              de cartera sin comprometer su flujo de caja.
             </motion.p>
           </motion.div>
         </div>
+
+        {/* TEXTO SEO OCULTO */}
+        <p className={styles.seoText}>
+          Honorarios en cobro jurídico a EPS bajo modelo de comisión por éxito,
+          recuperación de cartera hospitalaria sin anticipo y esquema financiero
+          alineado a resultados para IPS en Colombia.
+        </p>
       </motion.div>
     </section>
   );
