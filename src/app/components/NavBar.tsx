@@ -53,6 +53,9 @@ export default function NavBar() {
           <a href="#contacto" onClick={() => setMenuOpen(false)}>
             Contacto
           </a>
+          <a href="/Blog" onClick={() => setMenuOpen(false)}>
+            Blog
+          </a>
 
           {/* ÚNICO BOTÓN */}
           <Link

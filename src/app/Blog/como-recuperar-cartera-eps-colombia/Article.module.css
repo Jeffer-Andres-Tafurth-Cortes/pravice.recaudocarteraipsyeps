@@ -1,0 +1,162 @@
+.pageWrapper {
+  background-color: #f8f9fa;
+  padding: 100px 20px;
+}
+
+.article {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 70px;
+  border-radius: 16px;
+  box-shadow: 0px 25px 60px rgba(0, 59, 92, 0.08);
+}
+
+/* HERO */
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.badge {
+  display: inline-block;
+  background: #eef6fa;
+  color: #005f7f;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 38px;
+  color: #003b5c;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* PROBLEM BOX */
+
+.problemBox {
+  background: #f1f5f8;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+/* SECTIONS */
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  color: #003b5c;
+  margin-bottom: 20px;
+}
+
+/* STEPS */
+
+.stepsGrid {
+  display: grid;
+  gap: 25px;
+}
+
+.stepCard {
+  background: #f9fbfc;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #005f7f;
+}
+
+.stepCard span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #005f7f;
+}
+
+.stepCard h3 {
+  margin-top: 10px;
+  color: #003b5c;
+}
+
+/* LETTER */
+
+.tipBox {
+  background: #eef6fa;
+  padding: 15px;
+  border-left: 4px solid #005f7f;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.letterBox {
+  background: #f9fbfc;
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 4px solid #003b5c;
+}
+
+/* HIGHLIGHT SECTION */
+
+.sectionHighlight {
+  background: #003b5c;
+  color: white;
+  padding: 40px;
+  border-radius: 14px;
+  margin-bottom: 60px;
+}
+
+.sectionHighlight h2 {
+  color: white;
+}
+
+.sectionHighlight ul {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.statement {
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+/* FAQ */
+
+.faq {
+  margin-top: 15px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #003b5c;
+}
+
+/* CTA */
+
+.ctaSection {
+  text-align: center;
+  padding-top: 50px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.ctaButton {
+  display: inline-block;
+  margin-top: 20px;
+  background: #003b5c;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #005f7f;
+}
