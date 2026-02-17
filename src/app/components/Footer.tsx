@@ -48,8 +48,8 @@ export default function Footer() {
             <h4>Contacto</h4>
             <ul>
               <li>Bogotá D.C., Colombia</li>
-              <li>contacto@pravice.com</li>
-              <li>+57 300 000 0000</li>
+              <li>info.pravice@abogadosespecialistas.com.co</li>
+              <li>(601) 3099331</li>
               <li>Atención a nivel nacional</li>
             </ul>
           </div>

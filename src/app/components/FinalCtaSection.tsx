@@ -117,6 +117,13 @@ export default function FinalCtaSection() {
           </motion.ul>
 
           <motion.button
+            onClick={() =>
+              window.open(
+                "https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0",
+                "_blank",
+                "noopener noreferrer",
+              )
+            }
             className={styles.button}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
