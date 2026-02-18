@@ -135,32 +135,6 @@
   font-weight: bold;
 }
 
-/* ================= CTA ================= */
-
-.footer {
-  text-align: center;
-  border-top: 1px solid #e6e6e6;
-  padding-top: 40px;
-}
-
-.ctaButton {
-  display: inline-block;
-  margin-top: 20px;
-  background: #004a80;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.ctaButton:hover {
-  background: #f4c300;
-  color: #000;
-  transform: translateY(-3px);
-}
-
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {

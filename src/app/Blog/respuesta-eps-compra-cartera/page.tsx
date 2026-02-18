@@ -86,13 +86,6 @@ export default function ResponderCompraCartera() {
             existe incumplimiento o dilación injustificada.
           </p>
         </section>
-
-        {/* CTA */}
-        <footer className={styles.footer}>
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar evaluación estratégica
-          </a>
-        </footer>
       </article>
     </main>
   );

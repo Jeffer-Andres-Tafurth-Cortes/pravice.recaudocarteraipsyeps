@@ -82,10 +82,6 @@ export default function CobroEntesTerritoriales() {
             PRAVICE estructura expedientes sólidos para reducir riesgos y
             aumentar el recaudo efectivo.
           </p>
-
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar evaluación del caso
-          </a>
         </footer>
       </article>
     </main>

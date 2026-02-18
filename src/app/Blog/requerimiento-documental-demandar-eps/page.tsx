@@ -79,10 +79,6 @@ export default function DocumentosDemandarEPS() {
             PRAVICE estructura expedientes sólidos, orientados al recaudo
             efectivo.
           </p>
-
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar revisión documental
-          </a>
         </footer>
       </article>
     </main>

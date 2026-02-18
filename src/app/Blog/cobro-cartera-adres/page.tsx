@@ -97,10 +97,6 @@ export default function CobroCarteraADRES() {
             PRAVICE acompaña el litigio hasta el final, orientado al recaudo
             efectivo.
           </p>
-
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar evaluación del caso
-          </a>
         </footer>
       </article>
     </main>

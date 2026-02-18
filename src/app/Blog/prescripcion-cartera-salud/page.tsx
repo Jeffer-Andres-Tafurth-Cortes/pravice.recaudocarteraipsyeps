@@ -75,10 +75,6 @@ export default function PrescripcionCarteraSalud() {
             PRAVICE controla términos desde el primer día para proteger el
             recaudo efectivo.
           </p>
-
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar diagnóstico de cartera
-          </a>
         </footer>
       </article>
     </main>

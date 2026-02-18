@@ -10,7 +10,6 @@ import UseCaseSection from "./components/UseCaseSection";
 import FinalCtaSection from "./components/FinalCtaSection";
 import BenefitsSection from "./components/BenefitsSection";
 import DocumentationSection from "./components/DocumentationSection";
-import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 
 export default function Home() {
@@ -29,7 +28,6 @@ export default function Home() {
       <UseCaseSection />
       <DocumentationSection />
       <FinalCtaSection />
-      <Footer />
     </main>
   );
 }

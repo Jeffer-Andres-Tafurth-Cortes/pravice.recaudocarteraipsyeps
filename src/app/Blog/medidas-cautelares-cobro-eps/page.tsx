@@ -83,13 +83,6 @@ export default function MedidasCautelaresEPS() {
             probabilidad de recaudo efectivo.
           </p>
         </section>
-
-        {/* CTA */}
-        <footer className={styles.footer}>
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar evaluación de cartera
-          </a>
-        </footer>
       </article>
     </main>
   );

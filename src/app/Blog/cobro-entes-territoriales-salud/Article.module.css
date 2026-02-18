@@ -155,23 +155,6 @@
   font-size: 15px;
 }
 
-.ctaButton {
-  display: inline-block;
-  margin-top: 20px;
-  background: #004a80;
-  color: #ffffff;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.ctaButton:hover {
-  background: #003b5c;
-  transform: translateY(-2px);
-}
-
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {

@@ -78,10 +78,6 @@ export default function VenderOCobrarCartera() {
             Antes de vender su cartera, evalúe jurídicamente su potencial de
             recuperación.
           </p>
-
-          <a href="/contacto" className={styles.ctaButton}>
-            Solicitar evaluación estratégica
-          </a>
         </footer>
       </article>
     </main>

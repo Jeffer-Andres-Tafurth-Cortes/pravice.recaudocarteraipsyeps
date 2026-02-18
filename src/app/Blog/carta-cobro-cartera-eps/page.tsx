@@ -54,7 +54,7 @@ export default function CartaCobroEPS() {
 
           <div className={styles.letterBox}>
             <p>
-              <strong>Asunto:</strong> Requerimiento formal de pago – Cartera
+              <strong>Asunto:</strong> Requerimiento formal de pago - Cartera
               vencida
             </p>
 
