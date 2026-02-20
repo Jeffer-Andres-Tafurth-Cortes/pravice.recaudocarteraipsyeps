@@ -117,7 +117,7 @@ export default function Footer() {
 
       {/* BOTÓN FLOTANTE WHATSAPP */}
       <a
-        href="https://wa.me/573000000000"
+        href="https://api.whatsapp.com/message/RE7FEN4IGOISD1?autoload=1&app_absent=0"
         className={styles.whatsappFloat}
         target="_blank"
         rel="noopener noreferrer"
